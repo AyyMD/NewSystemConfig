@@ -14,6 +14,8 @@ sudo apt-get -y install git-core
 git config --global user.name "AyyMD"
 git config --global user.email "wflemmin@asu.edu"
 git config --global color.ui auto
+git config --global credential.helper cache
+git config --global credential.helper 'cache --timeout=604800'
 
 cd ~/Downloads 
 wget -O discord.deb "https://discordapp.com/api/download?platform=linux&format=deb"
