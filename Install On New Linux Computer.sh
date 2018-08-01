@@ -21,3 +21,13 @@ then
 	sudo apt-get update
 	sudo apt-get install sublime-text
 fi
+
+answer='Y'
+echo 'would you like to add Gnome Twich? [Y/n]'
+read answer 
+
+if [ $answer = 'Y' ] || [ $answer = 'y' ]
+then 
+	sudo add-apt-repository ppa:samoilov-lex/gnome-twitch
+	sudo apt update && sudo apt install gnome-twitch
+fi
